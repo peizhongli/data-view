@@ -1,5 +1,5 @@
 import React from 'react';
-import topImages from '../static/base64/base64'
+import topImages from '../static/base64/topImage'
 // 引入 ECharts 主模块
 const echarts = require('echarts');
 
