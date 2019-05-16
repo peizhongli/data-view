@@ -1,0 +1,193 @@
+/* 容器 */
+.container {
+  width: 1920px;
+  height: 1080px;
+  box-sizing: border-box;
+  padding: 0 47px;
+  color: #fff;
+  font-family: '方正兰亭粗黑', Microsoft YaHei ,'微软雅黑';
+  background: no-repeat;
+  background-image: url(./static/images/title.png), url(./static/images/left.png), url(./static/images/right.png);
+  background-size: 1920px 129px, 34px 940px, 34px 940px;
+  background-position: left top, left 103px, right 103px;
+}
+/* 小标题 */
+.container .title {
+  font-size: 22px;
+  color: #fff;
+  line-height: 1;
+  padding: 14px 0 0 26px;
+}
+
+/* 大标题 */
+.container .title.huge {
+  box-sizing: border-box;
+  padding: 63px 0 0 0;
+  height: 128px;
+  font-size: 44px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.container .flex-wrap {
+  display: flex;
+}
+.container .wrap-27 {
+  width: 512px;
+}
+.container .wrap-30 {
+  width: 774px;
+}
+
+/* 实时累计数据 */
+.container .real-time {
+  width: 512px;
+  height: 147px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: no-repeat;
+  background-image: url(./static/images/real_time.png);
+  background-size: 100% 100%;
+}
+.container .real-time .flex-wrap {
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.container .number-wrap .number-group {
+  width: 238px;
+  height: 50px;
+  margin-top: 8px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background: no-repeat;
+  background-image: url(./static/images/number_bg.png);
+  background-size: 100% 100%;
+}
+.container .number-wrap .number-group span {
+  width: 26px;
+  height: 35px;
+  display: inline-block;
+  color: #00ECFF;
+  text-align: center;
+  line-height: 35px;
+  font-family: '方正兰亭粗黑',fantasy;
+  font-size: 30px;
+  background: no-repeat;
+  background-image: url(./static/images/number.png);
+  background-size: 100% 100%;
+}
+.container .number-wrap p {
+  font-size: 20px;
+  color: #00ECFF;
+  text-align: center;
+}
+
+/* 业务渠道占比-饼图 */
+.container .piechart {
+  width: 507px;
+  height: 255px;
+  margin-top: 10px;
+}
+.container .pie-wrap {
+  width: 512px;
+  height: 468px;
+  margin-top: 29px;
+  background: no-repeat;
+  background-image: url(./static/images/channel.png);
+  background-size: 100% 100%;
+}
+.container .pie-wrap .channel-wrap {
+  margin-top: 16px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .channel-wrap p.subtitle {
+  margin-bottom: 6px;
+  color: #00ECFF;
+  font-size: 20px;
+  text-align: center;
+}
+.container .channel-wrap .channel-box {
+  width: 116px;
+  height: 99px;
+  padding: 22px 0;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(./static/images/channel_bg.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+}
+.container .channel-wrap span {
+  color: #00ECFF;
+}
+
+/* 业务量统计-柱形图 */
+.container .barchart {
+  width: 1234px;
+  height: 210px;
+  margin-top: 18px;
+}
+.container .bar-wrap {
+  width: 1288px;
+  height: 257px;
+  margin-top: 28px;
+  background: no-repeat;
+  background-image: url(./static/images/business.png);
+  background-size: 100% 100%;
+}
+
+/* 机器人top10排行 */
+.container .progress {
+  width: 450px;
+  height: 400px;
+  margin: 30px auto 0;
+}
+.container .progress-wrap {
+  width: 512px;
+  height: 513px;
+  background: no-repeat;
+  background-image: url(./static/images/top10.png);
+  background-size: 100% 100%;
+}
+.container .progress-wrap .title, .container .word-cloud-wrap .title {
+  text-align: right;
+  padding-right: 28px;
+}
+
+/* top10词云 */
+.container .wordcloud {
+  width: 435px;
+  height: 271px;
+  margin: 36px auto 0;
+}
+.container .word-cloud-wrap {
+  width: 512px;
+  height: 386px;
+  margin-top: 29px;
+  background: no-repeat;
+  background-image: url(./static/images/word_cloud.png);
+  background-size: 100% 100%;
+}
+#wordcloud {
+  background: no-repeat;
+  background-image: url(./static/images/cloud.png);
+  background-size: 435px 271px;
+}
+
+/* 地图 */
+.container section.map-wrap {
+  width: 774px;
+  height: 625px;
+  margin: 21px 14px 0;
+  background: no-repeat;
+  background-image: url(./static/images/map.png);
+  /* background-position: 10px 20px; */
+  background-size: 100% 100%;
+}
