@@ -2,9 +2,10 @@ import React from 'react';
 import PieChart from './Echarts/PieChart'
 import BarChart from './Echarts/BarChart'
 import Progress from './Echarts/Progress'
-import WordCloud from './Echarts/WordCloud'
+import WordCloud from './Echarts/3dwordcloud'
+// import WordCloud from './Echarts/WordCloud'
 import MapChart from './Echarts/MapChart'
-import './App1.css'
+import './App.css'
 
 function App() {
   return (

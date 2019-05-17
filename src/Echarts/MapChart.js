@@ -174,6 +174,16 @@ var convertData = function (data) {
 
 class MapChart extends React.Component {
   componentDidMount() {
+    console.log(convertData(data.sort(function (a, b) {
+      return b.value - a.value;
+    }).slice(0, 5)).map((i)=>{
+      return {
+        name: i.name,
+        itemStyle: {
+          areaColor: 'rgba(43,87,193,0.7)',
+        }
+      }
+    }))
     // 基于准备好的dom，初始化echarts实例
     const myChart = echarts.init(document.getElementById('mapchart'));
     // 绘制图表
@@ -204,34 +214,16 @@ class MapChart extends React.Component {
           shadowColor: 'rgba(0,236,255, 0.27)',
           shadowBlur: 7
         },
-        // color: {
-        //   type: 'radial',
-        //   x: 0.5,
-        //   y: 0.5,
-        //   r: 0.5,
-        //   colorStops: [{
-        //     offset: 0, color: 'red' // 0% 处的颜色
-        //   }, {
-        //     offset: 1, color: 'blue' // 100% 处的颜色
-        //   }],
-        //   global: false // 缺省为 false
-        // },
-        // regions: convertData(data.sort(function (a, b) {
-        //   return b.value - a.value;
-        // }).map((i)=>{
-        //   return {
-        //     name: i.name,
-        //     itemStyle: {
-        //       areaColor: 'rgba(43,87,193,0.7)',
-        //     }
-        //   }
-        // }))
-        regions: [{
-          name: '吉林',
-          itemStyle: {
-            areaColor: 'rgba(43,87,193,0.7)',
+        regions: convertData(data.sort(function (a, b) {
+          return b.value - a.value;
+        }).slice(0, 10)).map((i)=>{
+          return {
+            name: i.name,
+            itemStyle: {
+              areaColor: 'rgba(43,87,193,0.7)',
+            }
           }
-        }]
+        })
       },
       series: [
         {
@@ -240,16 +232,6 @@ class MapChart extends React.Component {
           coordinateSystem: 'geo',
           data: convertData(data),
           symbolSize: 6,
-          label: {
-            normal: {
-              formatter: '{b}',
-              position: 'right',
-              show: false
-            },
-            emphasis: {
-              show: false
-            }
-          },
           itemStyle: {
             normal: {
               color: '#F6F600'
@@ -272,11 +254,12 @@ class MapChart extends React.Component {
                 return `${params.data.name}+${params.value[2]}`
               },
               position: 'right',
-              show: true
+              show: true,
+              fontSize: 14
             },
             emphasis: {
               show: true
-            }
+            },
           },
           rippleEffect: {
             period: 3,
@@ -288,7 +271,43 @@ class MapChart extends React.Component {
               color: '#F6F600',
               shadowBlur: 10,
               shadowColor: '#333',
-              fontSize: 14
+            }
+          },
+          zlevel: 1
+        },
+        {
+          name: 'Top10',
+          type: 'effectScatter',
+          coordinateSystem: 'geo',
+          data: convertData(data.sort(function (a, b) {
+            return b.value - a.value;
+          }).slice(6, 10)),
+          symbolSize: 8,
+          showEffectOn: 'render',
+          hoverAnimation: true,
+          label: {
+            normal: {
+              formatter: function (params) {
+                return `+${params.value[2]}`
+              },
+              position: 'right',
+              show: true,
+              fontSize: 12
+            },
+            emphasis: {
+              show: true
+            },
+          },
+          rippleEffect: {
+            period: 3,
+            scale: 2,
+            brushType: 'fill'
+          },
+          itemStyle: {
+            normal: {
+              color: '#F6F600',
+              shadowBlur: 10,
+              shadowColor: '#333',
             }
           },
           zlevel: 1

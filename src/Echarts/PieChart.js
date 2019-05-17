@@ -20,7 +20,7 @@ class PieCharts extends React.Component {
           color: '#fff',
           fontSize: 14
         },
-        data: ['桌面网站', '移动网站', '微信小程序','微信公众号']
+        data: ['桌面网站', '移动网站', '微信小程序', '微信公众号']
       },
       series: [
         {
@@ -48,6 +48,26 @@ class PieCharts extends React.Component {
           labelLine: {
             lineStyle: {
               color: '#00ECFF'
+            }
+          },
+          emphasis: {
+            label: {
+              show: true,
+              formatter: `{b|{b}}\n占比: {d|{d}%}`,
+              fontWeight: 'bold',
+              color: '#fff',
+              rich: {
+                b: {
+                  color: '#fff',
+                  align: 'center',
+                  lineHeight: 22,
+                  fontWeight: 'bold',
+                },
+                d: {
+                  color: '#00ECFF',
+                  fontWeight: 'bold',
+                }
+              }
             }
           },
           data: [
@@ -143,7 +163,7 @@ class PieCharts extends React.Component {
       ]
     });
 
-    window.onresize = function(){
+    window.onresize = function () {
       myChart.resize()
     }
   }

@@ -11,14 +11,49 @@ class WordCloud extends React.Component {
     // 绘制图表
     maskImage.onload = function () {
       myChart.setOption({
+        tooltip: {
+          show: true,
+          trigger: 'item',
+          formatter: `{b} : {c}`,
+          fontSize: 14,
+          // extraCssText: 'background-image:linear-gradient(90deg,rgba(31,118,255,0.7) 0%,rgba(255,255,255,0) 100%);border-radius:0'
+        },
         series: [
           {
             type: 'wordCloud',
-            width: '100%',
-            height: '100%',
-            sizeRange: [12, 30],
+            top: 'center',
+            left: 'center',
+            width: '95%',
+            height: '95%',
+            sizeRange: [12, 28],
             rotationRange: [0, 0],
             maskImage: maskImage,
+            emphasis: {
+              show: true,
+              shadowBlur: 10,
+              shadowColor: '#333',
+              label: {
+                show: true,
+                normal: {
+                  formatter: '{b}',
+                  position: 'right',
+                  show: false
+                },
+                emphasis: {
+                  show: false
+                }
+              },
+            },
+            label: {
+              normal: {
+                formatter: '{b}',
+                position: 'right',
+                show: false
+              },
+              emphasis: {
+                show: false
+              }
+            },
             textStyle: {
               normal: {
                 color: function () {
@@ -30,7 +65,7 @@ class WordCloud extends React.Component {
             data: [
               {
                 name: '开机',
-                value: 10000,
+                value: 9867,
               },
               {
                 name: '系统',
@@ -66,7 +101,7 @@ class WordCloud extends React.Component {
               },
               {
                 name: '游戏',
-                value: 10000
+                value: 4456
               },
               {
                 name: '声音',
@@ -82,7 +117,7 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "汽车",
-                "value": 10000
+                "value": 9878
               },
               {
                 "name": "视频",
@@ -93,8 +128,8 @@ class WordCloud extends React.Component {
                 "value": 825
               },
               {
-                "name": "Lover Boy 88",
-                "value": 10000
+                "name": "Ninja",
+                "value": 8789
               },
               {
                 "name": "动漫",
@@ -102,7 +137,7 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "音乐",
-                "value": 10000
+                "value": 7688
               },
               {
                 "name": "直播",
@@ -110,7 +145,7 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "广播电台",
-                "value": 10000
+                "value": 9769
               },
               {
                 "name": "戏曲曲艺",
@@ -118,11 +153,11 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "演出票务",
-                "value": 10000
+                "value": 6769
               },
               {
                 "name": "给陌生的你听",
-                "value": 10000
+                "value": 9766
               },
               {
                 "name": "资讯",
@@ -134,7 +169,7 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "娱乐八卦",
-                "value": 10000
+                "value": 9678
               },
               {
                 "name": "军事",
@@ -150,11 +185,11 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "时尚",
-                "value": 10000
+                "value": 9678
               },
               {
                 "name": "网络奇闻",
-                "value": 10000
+                "value": 6788
               },
               {
                 "name": "旅游出行",
@@ -194,7 +229,7 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "旅游方式",
-                "value": 10000
+                "value": 9678
               },
               {
                 "name": "旅游主题",
@@ -206,7 +241,7 @@ class WordCloud extends React.Component {
               },
               {
                 "name": "本地周边游",
-                "value": 10000
+                "value": 9678
               },
               {
                 "name": "小卖家",

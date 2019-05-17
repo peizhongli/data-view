@@ -5,9 +5,6 @@ const echarts = require('echarts');
 
 class Progress extends React.Component {
   componentDidMount() {
-    const top1 = new Image
-    top1.src = '../static/images/1.png'
-    console.log(top1)
     // 基于准备好的dom，初始化echarts实例
     const myChart = echarts.init(document.getElementById('progress'));
     // 绘制图表
@@ -67,11 +64,11 @@ class Progress extends React.Component {
               }
             },
             formatter: function (params) {
-              if (params == 1) {
+              if (params === '1') {
                 return `{a|}`
-              } else if (params == 2) {
+              } else if (params === '2') {
                 return `{b|}`
-              } else if (params == 3) {
+              } else if (params === '3') {
                 return `{c|}`
               } else {
                 return `{d|${params}}`

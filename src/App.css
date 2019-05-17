@@ -1,29 +1,31 @@
 /* 容器 */
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 120rem;
+  height: 67.5rem;
   box-sizing: border-box;
-  padding: 0 2.44vw;
+  padding: 0 2.9375rem;
   color: #fff;
+  font-family: '方正兰亭粗黑', Microsoft YaHei, '微软雅黑';
   background: no-repeat;
   background-image: url(./static/images/title.png), url(./static/images/left.png), url(./static/images/right.png);
-  background-size: 100vw 11.9vh, 1.7vw 87vh, 1.7vw 87vh;
-  background-position: left top, left 9.53vh, right 9.53vh;
+  background-size: 120rem 8.0625rem, 2.125rem 58.75rem, 2.125rem 58.75rem;
+  background-position: left top, left 6.4375rem, right 6.4375rem;
 }
+
 /* 小标题 */
 .container .title {
-  font-size: 2.03vh;
+  font-size: 1.375rem;
   color: #fff;
   line-height: 1;
-  padding: 1.1vh 0 0 1.35vw;
+  padding: .875rem 0 0 1.625rem;
 }
 
 /* 大标题 */
 .container .title.huge {
   box-sizing: border-box;
-  padding: 5.8vh 0 0 0;
-  height: 11.9vh;
-  font-size: 4.44vh;
+  padding: 3.9375rem 0 0 0;
+  height: 8rem;
+  font-size: 2.75rem;
   font-weight: normal;
   text-align: center;
 }
@@ -31,32 +33,36 @@
 .container .flex-wrap {
   display: flex;
 }
+
 .container .wrap-27 {
-  width: 26.4vw;
+  width: 32rem;
 }
+
 .container .wrap-30 {
-  width: 40.3vw;
+  width: 48.375rem;
 }
 
 /* 实时累计数据 */
 .container .real-time {
-  width: 26.6vw;
-  height: 13.6vh;
-  padding: 0 0.52vw;
+  width: 32rem;
+  height: 9.1875rem;
+  padding: 0 .625rem;
   box-sizing: border-box;
   background: no-repeat;
   background-image: url(./static/images/real_time.png);
   background-size: 100% 100%;
 }
+
 .container .real-time .flex-wrap {
   justify-content: space-between;
-  margin-top: 1.48vh;
+  margin-top: 1rem;
 }
+
 .container .number-wrap .number-group {
-  width: 12.4vw;
-  height: 4.6vh;
-  margin-top: 0.74vh;
-  padding: 0 0.52vw;
+  width: 14.875rem;
+  height: 3.125rem;
+  margin-top: .5rem;
+  padding: 0 .625rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,98 +71,220 @@
   background-image: url(./static/images/number_bg.png);
   background-size: 100% 100%;
 }
+
 .container .number-wrap .number-group span {
-  width: 1.25vw;
-  height: 3.1vh;
+  width: 1.625rem;
+  height: 2.1875rem;
   display: inline-block;
   color: #00ECFF;
   text-align: center;
-  line-height: 3.2vh;
+  line-height: 2.1875rem;
+  font-family: '方正兰亭粗黑', fantasy;
+  font-size: 1.875rem;
   background: no-repeat;
   background-image: url(./static/images/number.png);
   background-size: 100% 100%;
 }
+
 .container .number-wrap p {
-  font-size: 1.85vh;
+  font-size: 1.25rem;
   color: #00ECFF;
   text-align: center;
 }
 
 /* 业务渠道占比-饼图 */
+.container .piechart {
+  width: 31.6875rem;
+  height: 15.9375rem;
+  margin-top: .625rem;
+}
+
 .container .pie-wrap {
-  width: 26.6vw;
-  height: 43.3vh;
-  margin-top: 2.68vh;
+  width: 32rem;
+  height: 29.25rem;
+  margin-top: 1.8125rem;
   background: no-repeat;
   background-image: url(./static/images/channel.png);
   background-size: 100% 100%;
 }
+
 .container .pie-wrap .channel-wrap {
-  margin-top: 2.9vh;
+  margin-top: 1rem;
+  padding: 0 .625rem;
   display: flex;
   justify-content: space-between;
-  font-size: 1.3vh;
 }
+
 .container .channel-wrap p.subtitle {
-  margin-bottom: 0.5vh;
+  margin-bottom: .375rem;
   color: #00ECFF;
-  font-size: 1.85vh;
+  font-size: 1.25rem;
   text-align: center;
 }
+
 .container .channel-wrap .channel-box {
-  width: 6vw;
-  height: 9.1vh;
+  width: 7.25rem;
+  height: 6.1875rem;
+  padding: 1.375rem 0;
+  box-sizing: border-box;
   text-align: center;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url(./static/images/channel_bg.png);
   background-size: 100% 100%;
-  font-size: 1.29vh;
+  font-size: .875rem;
 }
-.container .channel-wrap .channel-box p {
-  margin-top: 2.3vh;
-}
+
 .container .channel-wrap span {
   color: #00ECFF;
 }
 
 /* 业务量统计-柱形图 */
+.container .barchart {
+  width: 77.125rem;
+  height: 13.125rem;
+  margin-top: 1.125rem;
+}
+
 .container .bar-wrap {
-  width: 68.8vw;
-  height: 23.3vh;
-  margin-top: 2.7vh;
+  width: 80.5rem;
+  height: 16.0625rem;
+  margin-top: 1.75rem;
   background: no-repeat;
   background-image: url(./static/images/business.png);
   background-size: 100% 100%;
 }
 
 /* 机器人top10排行 */
+.container .progress {
+  width: 28.125rem;
+  height: 25rem;
+  margin: 1.875rem auto 0;
+}
+
 .container .progress-wrap {
-  width: 26.6vw;
-  height: 47.5vh;
+  width: 32rem;
+  height: 32.0625rem;
   background: no-repeat;
   background-image: url(./static/images/top10.png);
   background-size: 100% 100%;
 }
-.container .progress-wrap .title {
+
+.container .progress-wrap .title,
+.container .word-cloud-wrap .title {
   text-align: right;
-  padding-right: 1.45vw;
+  padding-right: 1.75rem;
 }
 
-/* top10词云 */
+/* top50词云 */
+.container .wordcloud {
+  width: 30rem;
+  height: 18.66rem;
+  margin: 0.8rem auto 0;
+  overflow: hidden;
+}
+
 .container .word-cloud-wrap {
-  width: 26.6vw;
-  height: 35.7vh;
-  margin-top: 2.6vh;
+  width: 32rem;
+  height: 24.125rem;
+  margin-top: 1.8125rem;
   background: no-repeat;
   background-image: url(./static/images/word_cloud.png);
   background-size: 100% 100%;
 }
-.container .word-cloud-wrap .title {
-  text-align: right;
-  padding-right: 1.45vw;
-}
+
 #wordcloud {
   background: no-repeat;
   background-image: url(./static/images/cloud.png);
-  background-size: 22.6vw 25vh;
+  background-size: 27.1875rem 16.9375rem;
+}
+
+/* 地图 */
+.container section.map-wrap {
+  width: 48.375rem;
+  height: 39.0625rem;
+  margin: 1.3125rem .875rem 0;
+  background: no-repeat;
+  background-image: url(./static/images/map.png);
+  background-size: 100% 100%;
+}
+
+/* 3d词云 */
+.tagBall {
+  width: 100%;
+  height: 24.125rem;
+  margin: 0 auto;
+  position: relative;
+  background: transparent no-repeat;
+  background-image: url(./static/images/cloud.png);
+  background-size: 100% auto;
+}
+
+.tag {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.tag .value-tag {
+  width: max-content;
+  display: none !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 110%;
+  display: block;
+  height: 35px;
+  padding: 0 30px 0 20px;
+  color: #F6F600;
+  line-height: 35px;
+  font-size: 14px;
+  background-image: linear-gradient(90deg, rgba(216, 255, 0, 0.7) 0%, rgba(58, 51, 255, 0) 100%);
+  ;
+}
+
+.tag:hover .value-tag {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/* 媒体查询 */
+/* @media (max-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 21.328px;
+  }
+} */
+
+/* @media (max-width: 3360px) {
+  html {
+    font-size: 28px;
+  }
+} */
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  html {
+    font-size: 21.328px;
+  }
+}
+@media only screen and (min-width: 3360px) {
+  html {
+    font-size: 28px;
+  }
 }
