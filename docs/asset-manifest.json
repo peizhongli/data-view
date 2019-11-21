@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3abcf674.chunk.css",
+    "main.js": "./static/js/main.abbe6716.chunk.js",
+    "main.js.map": "./static/js/main.abbe6716.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.a647e83c.chunk.js": "./static/js/2.a647e83c.chunk.js",
+    "static/js/2.a647e83c.chunk.js.map": "./static/js/2.a647e83c.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.038dd6d1d51547deb795b58a4ebb7eab.js": "./precache-manifest.038dd6d1d51547deb795b58a4ebb7eab.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.3abcf674.chunk.css.map": "./static/css/main.3abcf674.chunk.css.map",
+    "static/media/App.css": "./static/media/word_cloud.5db3c221.png"
+  }
+}
