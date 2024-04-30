@@ -1,6 +1,6 @@
 ## 您可以戳这里进行在线预览： https://peizhongli.github.io/data-view/
+## 这里有React18+Typecript的版本可以选择：https://peizhongli.github.io/react18-dashboard/
 ## 这里有Vue3+Typescript的版本可以选择：https://peizhongli.github.io/vue3-dashboard/
-
 
 
 
